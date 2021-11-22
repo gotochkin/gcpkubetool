@@ -22,6 +22,8 @@ docker build --force-rm --tag gcloud:latest .
 
 Get the authentication in the Google Cloud - this will create a container gcloud-config with your saved credentials:
 docker run -ti --name gcloud-config gcloud:latest gcloud auth login
+or use the gcr.io/google.com/cloudsdktool/cloud-sdk:latest image to split your custom gcloud and the configuration volume container which can be used independently
+docker run -ti --name gcloud-config gcr.io/google.com/cloudsdktool/cloud-sdk:latest gcloud auth login
 
 Run the image attaching the volume with authentication to the Google Cloud:
 docker run -ti --rm --volumes-from gcloud-config gcloud:latest /bin/bash
