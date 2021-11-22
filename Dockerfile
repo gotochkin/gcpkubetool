@@ -8,7 +8,7 @@ RUN apt-get install -y \
 #RUN gsutil cp gs://config-management-release/released/latest/linux_amd64/nomos /usr/bin/nomos; chmod +x /usr/bin/nomos && \
 RUN curl -L https://github.com/derailed/k9s/releases/download/v0.25.3/k9s_Linux_x86_64.tar.gz | tar xz  -C /usr/bin && \
     echo "alias g=gcloud" >> ~/.bashrc && \
-    echo "alias ll='ls -l" >> ~/.bashrc && \
+    echo "alias ll='ls -l'" >> ~/.bashrc && \
     echo "source /etc/bash_completion" >> ~/.bashrc && \
     echo "alias k=kubectl" >> ~/.bashrc && \
     echo "source <(kubectl completion bash)" >> ~/.bashrc && \
