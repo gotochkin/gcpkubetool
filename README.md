@@ -32,4 +32,7 @@ gcloud container clusters get-credentials your-gke-cluster --region us-central1
 You can create an alias and put it to your bash profile or bashrc:
 echo "alias gcloud='docker run -ti --rm --volumes-from gcloud-config gcloud:latest /bin/bash'" >~/.bashrc
 
-
+2021-11-22 Correction
+The nomos automatic install is removed because Google prohibited anonymous download "ServiceException: 401 Anonymous caller does not have storage.objects.get access to the Google Cloud Storage object."
+You can add the nomos manually by executing:
+gsutil cp gs://config-management-release/released/latest/linux_amd64/nomos /usr/bin/nomos; chmod +x /usr/bin/nomos
