@@ -1,6 +1,9 @@
 # gcpkubetool
 Docker image to work with K8 on Google Public Cloud
-Image contains Google SDK from https://cloud.google.com/sdk/docs/install 
+The image contains:
+ Google SDK from https://cloud.google.com/sdk/docs/install 
+ Tools from the https://www.dbcli.com project (https://github.com/dbcli) 
+
 
 Kubernetes CLI from https://k9scli.io/
 The kubectx utility 

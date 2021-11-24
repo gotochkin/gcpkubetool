@@ -14,6 +14,7 @@ RUN  curl -L https://github.com/derailed/k9s/releases/download/v0.25.3/k9s_Linux
     echo "source <(kubectl completion bash)" >> ~/.bashrc && \
     echo "complete -F __start_kubectl k" >> ~/.bashrc
 # Adding support for "gcloud sql connect" for MS SQL Server
+# using the mssql-cli developed by https://www.dbcli.com/ 
 RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py | python && \
     python -m pip install --upgrade pip && \ 
     python -m pip install mssql-cli
