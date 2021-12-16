@@ -18,4 +18,8 @@ RUN  curl -L https://github.com/derailed/k9s/releases/download/v0.25.3/k9s_Linux
 RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py | python && \
     python -m pip install --upgrade pip && \ 
     python -m pip install mssql-cli
+#Adding Helm
+RUN curl -L https://get.helm.sh/helm-v3.7.2-linux-amd64.tar.gz | tar xz -C /root && \ 
+    cp /root/linux-amd64/helm /usr/bin/
+
 

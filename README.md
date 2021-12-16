@@ -7,6 +7,7 @@ The image contains:
 - The kubectx utility 
 - The nomos utility from Google Cloud
 - Some useful command line utilities like telnet and other 
+- Helm utility from https://helm.sh/
 
 Requirements:
 - Docker or any other tools to build and use docker type images
