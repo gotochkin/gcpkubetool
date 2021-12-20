@@ -12,7 +12,8 @@ RUN  curl -L https://github.com/derailed/k9s/releases/download/v0.25.3/k9s_Linux
     echo "source /etc/bash_completion" >> ~/.bashrc && \
     echo "alias k=kubectl" >> ~/.bashrc && \
     echo "source <(kubectl completion bash)" >> ~/.bashrc && \
-    echo "complete -F __start_kubectl k" >> ~/.bashrc
+    echo "complete -F __start_kubectl k" >> ~/.bashrc && \
+    echo "export HELM_EXPERIMENTAL_OCI=1" >> ~/.bashrc
 # Adding support for "gcloud sql connect" for MS SQL Server
 # using the mssql-cli developed by https://www.dbcli.com/ 
 RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py | python && \
