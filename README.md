@@ -8,6 +8,7 @@ The image contains:
 - The nomos utility from Google Cloud
 - Some useful command line utilities like telnet and other 
 - Helm utility from https://helm.sh/
+- Golang 
 
 Requirements:
 - Docker or any other tools to build and use docker type images
